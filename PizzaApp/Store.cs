@@ -8,9 +8,9 @@ namespace PizzaApp
     {
         public void Start()
         {
-            Pizza p1 = new Pizza();
-            Pizza p2 = new Pizza();
-            Pizza p3 = new Pizza();
+            Pizza p1 = new Pizza(40, "Pizza1");
+            Pizza p2 = new Pizza(50, "Pizza2");
+            Pizza p3 = new Pizza(90, "Pizza3");
 
             Customer c1 = new Customer();
             Customer c2 = new Customer();
@@ -20,8 +20,7 @@ namespace PizzaApp
             Order o2 = new Order(p2, c2);
             Order o3 = new Order(p3, c3);
 
-
-            Console.WriteLine("Hello");
+            Console.WriteLine(p1);
         }
     }
 }
